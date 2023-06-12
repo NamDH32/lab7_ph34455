@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="50sp"
+        android:background="@drawable/btn_fan"
+        android:gravity="center"
+        android:text="FAN"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_quat"
+        android:layout_width="205dp"
+        android:layout_height="213dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/images" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp">
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/txt_fast"
+            android:layout_width="124dp"
+            app:backgroundTint="@null"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_fan"
+            android:text="FAST"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="20sp"/>
+
+        <Button
+            android:id="@+id/txt_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/btn_fan"
+            android:gravity="center"
+            android:text="MEDIUM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:gravity="center"
+            app:backgroundTint="@null"
+            android:id="@+id/txt_slow"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_fan"
+            android:text="SLOW"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_off"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/txt_off"
+        android:gravity="center"
+        android:text="OFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</LinearLayout>
